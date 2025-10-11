@@ -23,7 +23,6 @@
   box-sizing: border-box;
   -webkit-user-select: auto;
   user-select: auto;
-  touch-action: manipulation;
 }
 
 html,
@@ -32,7 +31,6 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden !important;
-  position: relative;
 }
 
 body {
