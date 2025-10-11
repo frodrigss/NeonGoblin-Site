@@ -831,10 +831,3 @@ a:focus-visible {
   outline: 3px solid var(--primary);
   outline-offset: 4px;
 }
-
-@media (prefers-reduced-motion: prefer-reduced) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
