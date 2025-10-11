@@ -1,4 +1,3 @@
-// NeonGoblin — Enhanced particle system with advanced interactions
 const canvas = document.getElementById("hero-canvas");
 const ctx = canvas.getContext("2d");
 let particles = [];
@@ -72,18 +71,13 @@ function step() {
 
     p.vx *= 0.96;
     p.vy *= 0.96;
-
-    // Decay life
     p.life -= 0.002;
     if (p.life < 0) p.life = p.maxLife;
-
-    // Wrap edges
     if (p.x < -10) p.x = canvas.clientWidth + 10;
     if (p.x > canvas.clientWidth + 10) p.x = -10;
     if (p.y < -10) p.y = canvas.clientHeight + 10;
     if (p.y > canvas.clientHeight + 10) p.y = -10;
 
-    // Draw particle
     const alpha = Math.sin(p.life * Math.PI) * 0.8;
     const colors =
       p.type === "primary"
@@ -121,7 +115,6 @@ window.addEventListener("resize", () => {
   createParticles(Math.max(60, Math.floor(canvas.clientWidth / 10)));
 });
 
-// UI Enhancements
 document.addEventListener("DOMContentLoaded", () => {
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
@@ -141,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
     lastScroll = currentScroll;
   });
 
-  // Button click animations
   document.querySelectorAll(".btn").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       const ripple = document.createElement("span");
@@ -169,7 +161,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Card stagger on scroll (Intersection Observer)
   const observerOptions = {
     threshold: 0.1,
     rootMargin: "0px 0px -100px 0px",
@@ -188,7 +179,6 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 
-  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -211,7 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   document.head.appendChild(style);
 
-  // Parallax effect on hero
   const hero = document.getElementById("hero");
   const heroCanvas = document.getElementById("hero-canvas");
   window.addEventListener("scroll", () => {

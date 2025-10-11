@@ -54,7 +54,6 @@ body {
   padding: 0 2rem;
 }
 
-/* Header */
 .site-header {
   position: sticky;
   top: 0;
@@ -163,7 +162,6 @@ body {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
 }
 
-/* Hero */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -561,7 +559,6 @@ body {
   font-weight: 700;
 }
 
-/* Games Grid */
 .games-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -700,7 +697,6 @@ body {
   );
 }
 
-/* Footer */
 .site-footer {
   border-top: 1px solid var(--border-light);
   padding: 3.5rem 0;
@@ -786,7 +782,6 @@ body {
   width: 100%;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .container {
     padding: 0 1.5rem;
@@ -834,13 +829,11 @@ body {
   }
 }
 
-/* Accessibility */
 a:focus-visible {
   outline: 3px solid var(--primary);
   outline-offset: 4px;
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: prefer-reduced) {
   * {
     animation: none !important;
