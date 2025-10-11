@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NeonGoblin — Jogos Indie</title>
+    <meta
+      name="description"
+      content="NeonGoblin — jogos pequenos com espírito caótico e diversão neon."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;600;800&display=swap"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <meta name="theme-color" content="#0f1419" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#hero" class="brand" aria-label="NeonGoblin Home">
+          <img src="logo.png" alt="NeonGoblin logo" class="logo" />
+          <span class="brand-text">NeonGoblin</span>
+        </a>
+        <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+          <ul>
+            <li><a href="#about" class="nav-link">Sobre</a></li>
+            <li><a href="#games" class="nav-link">Jogos</a></li>
+            <li><a href="#contact" class="nav-link cta">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <canvas
+          id="hero-canvas"
+          class="hero-canvas"
+          aria-hidden="true"
+        ></canvas>
+        <div class="hero-grid"></div>
+        <div class="hero-content container">
+          <div class="hero-text-wrapper">
+            <h1 id="hero-title">
+              <span class="pixel">NEON</span><span class="goblin">GOBLIN</span>
+            </h1>
+            <p class="tagline">
+              Juntos como Goblins, nossos jogos brilham mais que nosso nome.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a href="#games" class="btn primary">
+              <span>Ver Jogos</span>
+              <span class="btn-icon">→</span>
+            </a>
+            <a href="#about" class="btn ghost">Nossa História</a>
+          </div>
+          <div class="scroll-indicator">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about container" aria-labelledby="about-title">
+        <div class="section-header">
+          <h2 id="about-title">Sobre a NeonGoblin</h2>
+          <div class="header-accent"></div>
+        </div>
+        <p class="lead">
+          Somos uma equipe pequena de devs e artistas inspirados por fantasia,
+          caos e mecânicas viciantes. Nosso objetivo é fazer jogos que provoquem
+          sorrisos e frustrações agradáveis na medida certa.
+        </p>
+
+        <div class="about-grid">
+          <article class="card" data-card="vision">
+            <div class="card-icon">✨</div>
+            <h3>Visão</h3>
+            <p class="about-text">
+              Somos uma equipe ousada de desenvolvedores e artistas movida por
+              fantasia e mecânicas viciantes. Criamos experiências que desafiam
+              limites, provocam sorrisos genuínos e aquela frustração deliciosa
+              que te traz de volta para mais uma tentativa. Cada jogo é um
+              universo pensado para manter você engajado, envolvido e sempre
+              querendo ir além. Nossa missão? Transformar ideias criativas em
+              mundos digitais que respiram a paixão por jogos, onde a emoção e o
+              vício caminham lado a lado. Acreditamos que os melhores jogos são
+              aqueles que deixam marcas — não só na tela, mas na mente de quem
+              joga.
+            </p>
+          </article>
+
+          <article class="card" data-card="values">
+            <div class="card-icon">🎯</div>
+            <h3>Valores</h3>
+            <ul>
+              <li>Jogabilidade acima de tudo</li>
+              <li>Criação com alegria e frustrações controladas</li>
+              <li>Respeito pela comunidade</li>
+            </ul>
+          </article>
+
+          <article class="card team" data-card="team">
+            <div class="card-icon">👥</div>
+            <h3>Conheça nossa horda</h3>
+            <ul>
+              <li><strong>CEO & Programador</strong> - Felipe</li>
+              <li><strong>Diretor de Artes</strong> - Eloah</li>
+              <li><strong>Diretor de Marketing e Mídia</strong> - Jullya</li>
+              <li><strong>Diretor de Áudio</strong> - Pietro</li>
+              <li><strong>Diretor de Apresentações</strong> - Diogo</li>
+              <li><strong>Diretor de Programação</strong> - Vitor T.</li>
+              <li><strong>Gerente de Marketing e Mídia</strong> - Thaís</li>
+              <li><strong>Gerente de Áudio</strong> - Matheus</li>
+              <li><strong>Gerente de Programação</strong> - Lucas L.</li>
+              <li><strong>Gerente de Apresentações</strong> - Victor</li>
+              <li><strong>Gerente de Artes</strong> - Bianca</li>
+              <li><strong>Artista</strong> - Gustavo</li>
+              <li><strong>Assistente de Artes</strong> - João</li>
+              <li><strong>Assistente de Marketing</strong> - Lucas P.</li>
+              <li><strong>Assistente de Apresentações</strong> - Bruno</li>
+              <li><strong>Assistente de Marketing e Mídia</strong> - Pedro</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="games" class="games container" aria-labelledby="games-title">
+        <div class="section-header">
+          <h2 id="games-title">Jogos</h2>
+          <div class="header-accent"></div>
+        </div>
+        <p class="lead">Conheça nossos títulos!</p>
+
+        <div class="games-grid">
+          <article class="game-card" data-game="0">
+            <div class="game-art"></div>
+            <div class="game-content">
+              <h3>?</h3>
+              <p>Em breve...</p>
+              <div class="game-meta">
+                <span class="badge soon">Próximo</span>
+                <span class="platform">Mobile & Desktop</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer id="contact" class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <p class="brand-inline">
+            <img src="logo.png" alt="NeonGoblin" class="logo-sml" /> NeonGoblin
+          </p>
+          <p class="muted">
+            © <span id="year"></span> NeonGoblin. Todos os direitos reservados.
+          </p>
+        </div>
+        <nav aria-label="Social">
+          <ul class="social">
+            <li>
+              <a href="https://www.instagram.com/neon_goblin_" aria-label="Instagram" class="social-link">Instagram</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
