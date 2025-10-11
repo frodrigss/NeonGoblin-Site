@@ -43,7 +43,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.4) inset;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.1em;
 }
 
 .container {
