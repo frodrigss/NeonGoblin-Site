@@ -8,6 +8,7 @@ let width,
 function resize() {
   width = canvas.width = Math.floor(canvas.clientWidth * dpr);
   height = canvas.height = Math.floor(canvas.clientHeight * dpr);
+  ctx.resetTransform();
   ctx.scale(dpr, dpr);
 }
 
@@ -48,7 +49,7 @@ function step() {
   ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
 
   // Animated background gradient
-  const gradient = ctx.createLinearGradient(0, 0, 0, canvas.clientHeight);
+  const gradient = ctx.createLinearGradient(0, 0, 0, canvas.clientHeight / dpr);
   gradient.addColorStop(0, "rgba(15, 20, 25, 0.15)");
   gradient.addColorStop(0.5, "rgba(34, 197, 94, 0.03)");
   gradient.addColorStop(1, "rgba(14, 165, 233, 0.02)");
@@ -111,6 +112,7 @@ function init() {
 }
 
 window.addEventListener("resize", () => {
+  dpr = Math.max(1, window.devicePixelRatio || 1);
   resize();
   createParticles(Math.max(60, Math.floor(canvas.clientWidth / 10)));
 });
