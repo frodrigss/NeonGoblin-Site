@@ -14,12 +14,26 @@ python -m http.server 8000
 # Depois acesse http://localhost:8000
 ```
 
-## O que vem incluso
+## Estrutura do projeto
+
+```
+.
+├── index.html
+├── assets
+│   ├── css
+│   │   └── styles.css
+│   ├── js
+│   │   └── script.js
+│   └── images
+│       └── logo.png
+├── README.md
+└── LICENSE
+```
 
 - `index.html` — Estrutura completa com hero, destaques, vitrine filtrável de jogos, CTA e modal de detalhes.
-- `styles.css` — Layout responsivo, grid animado, cartões com efeitos neon e suporte à navegação móvel.
-- `script.js` — Partículas interativas, menu hambúrguer, scroll spy, lista de jogos gerada via dados, filtros, modal e validação do formulário.
-- `logo.png` — Marca do estúdio utilizada no cabeçalho e rodapé.
+- `assets/css/styles.css` — Layout responsivo, grid animado, cartões com efeitos neon e suporte à navegação móvel.
+- `assets/js/script.js` — Partículas interativas, menu hambúrguer, scroll spy, lista de jogos gerada via dados, filtros, modal e validação do formulário.
+- `assets/images/logo.png` — Marca do estúdio utilizada no cabeçalho e rodapé.
 
 ## Notas de design
 

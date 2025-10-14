@@ -71,14 +71,12 @@ function step() {
 
     p.vx *= 0.96;
     p.vy *= 0.96;
-    p.life -= 0.002;
-    if (p.life < 0) p.life = p.maxLife;
     if (p.x < -10) p.x = canvas.clientWidth + 10;
     if (p.x > canvas.clientWidth + 10) p.x = -10;
     if (p.y < -10) p.y = canvas.clientHeight + 10;
     if (p.y > canvas.clientHeight + 10) p.y = -10;
 
-    const alpha = Math.sin(p.life * Math.PI) * 0.8;
+    const alpha = 0.8;
     const colors =
       p.type === "primary"
         ? { glow: "rgba(34, 197, 94, ", core: "rgba(220, 255, 220, " }
