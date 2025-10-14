@@ -1,34 +1,34 @@
 # NeonGoblin — Site
 
-Demo website project for the fictional NeonGoblin — a game studio with a neon/goblin personality.
+Landing page for a fictional indie studio com estética neon e temática goblin.
 
-How to run locally
+## Como rodar localmente
 
-1. Open the project folder in your editor (e.g., VS Code).
-2. Open `index.html` in the browser. For best performance (CORS and fonts), I recommend serving via a simple static server.
+1. Abra a pasta do projeto no seu editor (ex.: VS Code).
+2. Sirva o diretório com um servidor estático simples ou abra `index.html` direto no navegador. Servir via HTTP garante carregamento correto de fontes externas.
 
-Example with Python (Windows PowerShell):
+Exemplo com Python (Windows PowerShell):
 
 ```powershell
 python -m http.server 8000
-# Then open http://localhost:8000
+# Depois acesse http://localhost:8000
 ```
 
-What's included
+## O que vem incluso
 
-- `index.html` — site structure (hero, about, games, footer)
-- `styles.css` — responsive styles, green/neon palette, pixel-like fonts
-- `script.js` — interactive particles on the hero, button microinteractions
-- `logo.svg` — logo (provided)
+- `index.html` — Estrutura completa com hero, destaques, vitrine filtrável de jogos, CTA e modal de detalhes.
+- `styles.css` — Layout responsivo, grid animado, cartões com efeitos neon e suporte à navegação móvel.
+- `script.js` — Partículas interativas, menu hambúrguer, scroll spy, lista de jogos gerada via dados, filtros, modal e validação do formulário.
+- `logo.png` — Marca do estúdio utilizada no cabeçalho e rodapé.
 
-Design Notes
+## Notas de design
 
-- Main palette: green `#228B22`, variations, and red `#e63946` for contrast
-- Typography: `Press Start 2P` (pixel feel) for titles + `Inter` for body
-- Accessibility: visible focus, reasonable contrast, semantic elements, and basic Aria labels.
+- Paleta neon baseada em verdes, azuis e laranja quente para destaques.
+- Tipografia primária com `Inter` e exibição de títulos em gradiente para reforçar a identidade.
+- Focus visível, estrutura semântica e estados ARIA para navegação acessível e componentes interativos.
 
-Suggested Next Steps
+## Próximos passos sugeridos
 
-- Add detailed game pages with trailers and screenshots
-- Improve canvas performance (reduce low-end particles)
-- Include theme preferences (light/dark mode)
+- Criar páginas detalhadas por jogo com trailer, screenshots e roadmap.
+- Conectar o formulário a uma ferramenta real de mailing (ex.: Buttondown, Mailchimp).
+- Adicionar seleção de idioma e alternância de tema (light/dark) persistente.

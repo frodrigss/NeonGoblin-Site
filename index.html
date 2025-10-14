@@ -4,9 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#0f1419">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#0f1419" />
     <title>NeonGoblin</title>
     <meta
       name="description"
@@ -29,9 +27,26 @@
           <img src="logo.png" alt="NeonGoblin logo" class="logo" />
           <span class="brand-text">NeonGoblin</span>
         </a>
-        <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Alternar navegação"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+        <nav
+          class="main-nav"
+          id="primary-navigation"
+          role="navigation"
+          aria-label="Navegação principal"
+        >
           <ul>
             <li><a href="#about" class="nav-link">Sobre</a></li>
+            <li><a href="#features" class="nav-link">Diferenciais</a></li>
             <li><a href="#games" class="nav-link">Jogos</a></li>
           </ul>
         </nav>
@@ -47,30 +62,51 @@
         ></canvas>
         <div class="hero-grid"></div>
         <div class="hero-content container">
-          <div class="hero-text-wrapper">
-            <h1 id="hero-title">
-              <span class="pixel">NEON</span><span class="goblin">GOBLIN</span>
-            </h1>
-            <p class="tagline">
-              Juntos como Goblins, nossos jogos brilham mais que nosso nome.
-            </p>
-          </div>
-          <div class="hero-actions">
-            <a href="#games" class="btn primary">
-              <span>Ver Jogos</span>
-              <span class="btn-icon">→</span>
-            </a>
-            <a href="#about" class="btn ghost">Nossa História</a>
-          </div>
-          <div class="scroll-indicator">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
+          <div class="hero-layout">
+            <div class="hero-text-wrapper">
+              <h1 id="hero-title">
+                <span class="pixel">NEON</span>
+                <span class="goblin">GOBLIN</span>
+              </h1>
+              <p class="tagline">
+                Juntos como Goblins, nossos jogos brilham mais que nosso nome.
+              </p>
+              <div class="hero-actions">
+                <a href="#games" class="btn primary">
+                  <span>Ver Jogos</span>
+                  <span class="btn-icon">→</span>
+                </a>
+                <a href="#about" class="btn ghost">Nossa História</a>
+              </div>
+              <div class="hero-stats" role="list">
+                <div class="stat-card" role="listitem">
+                  <span class="stat-number">+17</span>
+                  <span class="stat-label">Goblins criativos</span>
+                </div>
+                <div class="stat-card" role="listitem">
+                  <span class="stat-number">∞</span>
+                  <span class="stat-label">Histórias para contar</span>
+                </div>
+              </div>
+            </div>
+            <aside class="hero-side" aria-label="Novidades do estúdio">
+              <div class="hero-card">
+                <h2>Devlog da Semana</h2>
+                <p>Prototipando nosso novo jogo...</p>
+                <a href="#games" class="hero-link">Ver prévia</a>
+              </div>
+              <div class="hero-card">
+                <h2>Fique por dentro!</h2>
+                <p>Acesse nosso Instagram.</p>
+                <a
+                  href="https://www.instagram.com/neongoblin.studios"
+                  class="hero-link"
+                  target="_blank"
+                  rel="noopener"
+                  >Ir</a
+                >
+              </div>
+            </aside>
           </div>
         </div>
       </section>
@@ -80,12 +116,6 @@
           <h2 id="about-title">Sobre a NeonGoblin</h2>
           <div class="header-accent"></div>
         </div>
-        <p class="lead">
-          Somos uma equipe pequena de devs e artistas inspirados por fantasia,
-          caos e mecânicas viciantes. Nosso objetivo é fazer jogos que provoquem
-          sorrisos e frustrações agradáveis na medida certa.
-        </p>
-
         <div class="about-grid">
           <article class="card" data-card="vision">
             <div class="card-icon">✨</div>
@@ -111,6 +141,11 @@
               <li>Jogabilidade acima de tudo</li>
               <li>Criação com alegria e frustrações controladas</li>
               <li>Respeito pela comunidade</li>
+              <li>Inovação constante</li>
+              <li>Trabalho em equipe e colaboração</li>
+              <li>Transparência e comunicação aberta</li>
+              <li>Compromisso com a qualidade</li>
+              <li>Aprendizado contínuo</li>
             </ul>
           </article>
 
@@ -128,13 +163,70 @@
               <li><strong>Gerente de Áudio</strong> - Matheus</li>
               <li><strong>Gerente de Programação</strong> - Lucas L.</li>
               <li><strong>Gerente de Apresentações</strong> - Victor</li>
-              <li><strong>Gerente de Artes</strong> - Bianca</li>
-              <li><strong>Artista</strong> - Gustavo</li>
+              <li><strong>Gerente de Artes</strong> - Gustavo Rodrigues</li>
+              <li><strong>Artista</strong> - Bianca</li>
+              <li><strong>Artista</strong> - Gustavo Arthur</li>
               <li><strong>Assistente de Artes</strong> - João</li>
               <li><strong>Assistente de Marketing</strong> - Lucas P.</li>
               <li><strong>Assistente de Apresentações</strong> - Bruno</li>
               <li><strong>Assistente de Marketing e Mídia</strong> - Pedro</li>
             </ul>
+          </article>
+        </div>
+        <div class="about-highlights" role="list">
+          <div class="highlight" role="listitem">
+            <span class="highlight-label">Game jams por ano</span>
+            <span class="highlight-value">6</span>
+          </div>
+          <div class="highlight" role="listitem">
+            <span class="highlight-label">Comunidade conectada</span>
+            <span class="highlight-value">+3K</span>
+          </div>
+          <div class="highlight" role="listitem">
+            <span class="highlight-label">Café consumido</span>
+            <span class="highlight-value">127L</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="features"
+        class="features container"
+        aria-labelledby="features-title"
+      >
+        <div class="section-header">
+          <h2 id="features-title">Diferenciais do nosso estúdio</h2>
+          <div class="header-accent"></div>
+        </div>
+        <p class="lead">
+          Cada projeto nasce com uma proposta distinta, mas todos compartilham
+          nossos pilares: identidade visual única, sistemas que evoluem com a
+          comunidade e uma narrativa que mistura humor, fantasia e frustração.
+        </p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🧪</div>
+            <h3>Experimentos controlados</h3>
+            <p>
+              Rodamos protótipos semanais e medimos diversão com playtests ao
+              vivo. O que funciona escala, o que não funciona vira meme interno.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🎨</div>
+            <h3>Visual responsivo</h3>
+            <p>
+              Nosso pipeline de arte gera shaders e HUDs dinâmicos que variam
+              com a dificuldade do jogador.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🤝</div>
+            <h3>Comunidade no comando</h3>
+            <p>
+              Roadmaps públicos, votações mensais e integração com Instagram
+              para feedback instantâneo. Jogamos junto desde o primeiro build.
+            </p>
           </article>
         </div>
       </section>
@@ -145,22 +237,76 @@
           <div class="header-accent"></div>
         </div>
         <p class="lead">Conheça nossos títulos!</p>
-
-        <div class="games-grid">
-          <article class="game-card" data-game="0">
-            <div class="game-art"></div>
+        <div class="games-toolbar">
+          <div class="filters" role="tablist" aria-label="Filtro de jogos">
+            <button
+              class="filter-btn active"
+              type="button"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              Todos
+            </button>
+            <button
+              class="filter-btn"
+              type="button"
+              data-filter="in-development"
+              role="tab"
+              aria-selected="false"
+            >
+              Em produção
+            </button>
+            <button
+              class="filter-btn"
+              type="button"
+              data-filter="released"
+              role="tab"
+              aria-selected="false"
+            >
+              Lançados
+            </button>
+          </div>
+          <p class="games-hint">Clique em um jogo para ver detalhes.</p>
+        </div>
+        <div class="games-grid" id="games-grid" role="list">
+          <article class="game-card">
+            <div class="game-art" aria-hidden="true"></div>
             <div class="game-content">
               <h3>?</h3>
-              <p>Em breve...</p>
+              <p>Esse é o segredo da nossa cabana...</p>
               <div class="game-meta">
-                <span class="badge soon">Próximo</span>
-                <span class="platform">Mobile & Desktop</span>
+                <span class="badge dev">Em produção</span>
+                <span class="platform">PC • Mobile</span>
               </div>
             </div>
           </article>
         </div>
       </section>
     </main>
+    <section id="join" class="cta" aria-labelledby="cta-title">
+      <div class="cta-inner container">
+        <div class="cta-text">
+          <h2 id="cta-title">Faça parte da nossa guilda</h2>
+          <p>
+            Receba devlogs exclusivos, convites para playtests fechados e acesso
+            antecipado às próximas builds. Prometemos apenas emails épicos.
+          </p>
+        </div>
+        <form class="cta-form" novalidate>
+          <input
+            id="cta-email"
+            type="email"
+            name="email"
+            placeholder="seuemail@goblin.com"
+            required
+          />
+          <button type="submit" class="btn primary">Quero participar</button>
+          <p class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
     <footer id="contact" class="site-footer" role="contentinfo">
       <div class="container footer-inner">
         <div class="footer-brand">
@@ -174,12 +320,62 @@
         <nav aria-label="Social">
           <ul class="social">
             <li>
-              <a href="https://www.instagram.com/neon_goblin_" aria-label="Instagram" class="social-link">Instagram</a>
+              <a
+                href="https://www.instagram.com/neongoblin.studios"
+                aria-label="Instagram"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </footer>
+    <div
+      class="modal"
+      id="game-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal-backdrop" data-modal-close></div>
+      <div class="modal-content" role="document">
+        <button
+          type="button"
+          class="modal-close"
+          aria-label="Fechar detalhes"
+          data-modal-close
+        >
+          ×
+        </button>
+        <div class="modal-body">
+          <h3 id="modal-title"></h3>
+          <p id="modal-description"></p>
+          <ul id="modal-tags" class="modal-tags"></ul>
+          <div class="modal-footer">
+            <span class="modal-platform"></span>
+            <a
+              href="#"
+              id="modal-link"
+              target="_blank"
+              rel="noopener"
+              class="btn ghost"
+              >Ver devlog</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="back-to-top"
+      id="back-to-top"
+      type="button"
+      aria-label="Voltar ao topo"
+    >
+      ↑
+    </button>
     <script src="script.js" defer></script>
   </body>
 </html>
