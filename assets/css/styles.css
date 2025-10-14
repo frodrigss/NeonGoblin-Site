@@ -1307,6 +1307,10 @@ body.modal-open {
 }
 
 @media (max-width: 768px) {
+  .hero-canvas {
+    display: none;
+  }
+
   .hero {
     padding-top: 3.5rem;
     padding-bottom: 4rem;
